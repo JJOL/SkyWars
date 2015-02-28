@@ -19,9 +19,13 @@
             <id>sk89q-repo</id>
             <url>http://maven.sk89q.com/repo/</url>
         </repository>
-        <repository>
+        <!--<repository> OLD!
             <id>vault-repo</id>
             <url>http://ci.herocraftonline.com/plugin/repository/everything</url>
+        </repository> -->
+        <repository>
+            <id>vault-repo</id>
+            <url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
         </repository>
     </repositories>
 
@@ -38,11 +42,17 @@
             <version>LATEST</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
+        <!--<dependency> OLD!
             <groupId>net.milkbowl</groupId>
             <artifactId>vault</artifactId>
             <version>1.2.27</version>
             <scope>compile</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>net.milkbowl.vault</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.5</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.earth2me</groupId>
